@@ -1,0 +1,13 @@
+dbt_analytics:
+  outputs:
+    dev:
+      account: uo36924.us-east-2.aws
+      database: AIRBNB
+      password: dbtPassword123
+      role: transform
+      schema: raw
+      threads: 4
+      type: snowflake
+      user: dbt
+      warehouse: COMPUTE_WH
+  target: dev
